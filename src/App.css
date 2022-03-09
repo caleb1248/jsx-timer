@@ -1,7 +1,9 @@
+/* Import stuff */
+
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
-button#timeSelector{
+button#timeSelector {
 	border: none;
 	width: 50px;
 	height: 50px;
@@ -10,7 +12,7 @@ button#timeSelector{
 	background-color: purple;
 }
 
-button#togglePlay{
+button#togglePlay {
 	color:white;
 	background-color: green;
 	border-radius: 50%;
@@ -19,20 +21,13 @@ button#togglePlay{
 	border: none;
 }
 
-div#timer{
+div {
 	display: inline-block;
 	padding: 24px 32px;
 	border-radius: 20px;
 	background-color: lightgray;
 }
 
-span#time{
-	font-weight: bold;
-	font-size: 40px;
-	font-family: sans-serif;
-	margin-right: 10px;
-}
-
-button{
+button {
 	cursor: pointer;
 }
