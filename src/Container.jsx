@@ -1,35 +1,18 @@
 import React from 'react';
 import Display from "./lib/Display/index";
-
-const timer = React.createRef();
+import TimeSelector from './lib/TimeSelector/index';
 
 function Container() {
+	const timer = React.createRef();
+	alert('hi');
   return (
 		<div>
-			<Display ref={timer}/>
-			<TimeSelector/>
+			<Display ref={ timer }/>
+			<TimeSelector display={ timer }/>
 		</div>
   );
 }
 
-function TimeSelector() {
-	return (
-		<button onClick = {
-			() => {
-				var h = window.prompt('enter hours'),
-      		m = window.prompt('enter hours'),
-      		s = window.prompt('enter hours');
 
-    		if (h != null && m != null && s != null) {
-		      timer.current.changeTime([
-		        parseInt(h),
-		        parseInt(m),
-		        parseInt(s)
-		      ]);
-				}
-			}
-		} className = "material-icons-outlined" id="timeSelector">timer</button>
-	)
-}
 
 export default Container;

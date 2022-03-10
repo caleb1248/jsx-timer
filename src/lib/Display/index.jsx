@@ -4,7 +4,7 @@ import './Display.css';
 class Display extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = { time:[0,0,0] };
+		this.state = { time: [0,0,0] };
 	}
 
 	changeTime(time) {
